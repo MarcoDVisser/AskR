@@ -1,0 +1,12 @@
+Package: AskR
+Type: Package
+Title: R will answer yes or no questions about anything
+Version: 1.0
+Date: 21.03.2014
+Author: Marco D. Visser
+Maintainer: Marco D. Visser <marco.d.visser@gmail.com>
+Description: Ask R about anything!
+Suggests:
+License: MIT
+Collate:
+    'AskR.R'
