@@ -4,6 +4,11 @@ AskR
   'AskR' is an interface that helps you make those important life-decisions
   using R. 
 
+Aren't you tired of making all those difficult life decisions yourself?
+Aren't you tired of weighing the pros and the cons of everything all the time?
+
+Well you no longer have to! Just use AskR!!
+
 
 ## Installation
 
