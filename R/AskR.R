@@ -19,19 +19,46 @@
 "Outlook not so good",
 "Very doubtful")
 
-AskR<-function(question="Will this package be a great success?")
-{
+#' Decision Maker
+#' 
+#' AskR is an interface that helps you make those important life-decisions using 
+#' R.
+#' 
+#' @param question a yes no question about anything really. Must be a character, 
+#' e.g. "Will this package be a great success?".
+#' @return Returns a character vector of the class AskR
+#' @keywords fortune question
+#' @export
+#' @examples
+#' # pick a color
+#' AskR(question="Will this package be a great success?")
+#' \dontrun{
+#' library(devtools)
+#' install_github("cowsay", "sckott")
+#' library(cowsay)
+#' 
+#' say(AskR("Will robots be terminated?")) 
+#' }
+AskR <- function(question="Will this package be a great success?") {
 
-response<-sample(1:length(.Responses),1)
-
-if(question=="Will this package be a great success?"){
- cat(question,"?","\n")
- cat("\n")
- cat("R says:  ",.Responses[20],"\n")
-} else {
-
-cat(question,'?',"\n")
-cat("\n")
-cat("R says:  ",.Responses[response],"\n")
- }
+    predet <- "Will this package be a great success?"
+    response <- ifelse(question == predet, 20, sample(1:length(.Responses), 1))
+    out <- sprintf("%s ?\n\nR says:  %s", question, .Responses[response])
+    class(out) <- c("AskR", class(out))
+    out
 }
+
+#' Prints a AskR Object
+#' 
+#' Prints a AskR object.
+#' 
+#' @param x The AskR object.
+#' @param \ldots ignored
+#' @method print AskR
+#' @S3method print AskR
+print.AskR <- function(x, ...) {
+
+    cat(x, "\n")
+
+}
+

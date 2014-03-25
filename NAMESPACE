@@ -1,1 +1,2 @@
+S3method(print,AskR)
 export(AskR)

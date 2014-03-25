@@ -6,7 +6,4 @@ Date: 21.03.2014
 Author: Marco D. Visser
 Maintainer: Marco D. Visser <marco.d.visser@gmail.com>
 Description: Ask R about anything!
-Suggests:
 License: MIT
-Collate:
-    'AskR.R'
