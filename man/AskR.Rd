@@ -14,6 +14,6 @@ e.g. "Will this package be a great success?".
   using R.
 }
 \examples{
-# pick a color
+# Ask a question
 AskR(question="Will this package be a great success?")
 }
