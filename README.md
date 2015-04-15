@@ -33,6 +33,8 @@ add the source code to your .Rprofile.
  
 ## Usage Examples
 
+Interface is currently limited to yes/no answers
+
 ```r
 AskR(question="Will this package be a great success?")
 #R says:   Very doubtful 
