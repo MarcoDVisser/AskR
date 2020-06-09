@@ -25,7 +25,7 @@ or use the **devtools** package to install the development version
 update.packages()
 ## devtools is required
 library(devtools)
-install_github("AskR", "MarcoDVisser")
+install_github("MarcoDVisser/AskR")
 ```
 
 Or find the relevant functions in /R and just 
